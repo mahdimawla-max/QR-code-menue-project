@@ -1,0 +1,117 @@
+.my-coffee-box {
+  padding: 15px;
+}
+.text-center img {
+  height: 100px;
+}
+.coffee-box {
+  background-image: 
+    linear-gradient(to right, rgba(0,0,0,0.35), rgba(0,0,0,0)),
+    url('image/latte.png');
+  background-size: cover, cover;
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  border-radius: 16px;
+  padding: 20px;
+  min-height: 220px;
+  position: relative;
+}
+@media (max-width: 576px) {
+  .coffee-box {
+    min-height: 160px;
+    padding: 15px;
+    background-position: center, right center;
+  }
+
+  .left-coffee h2 {
+    font-size: 1.1rem;
+  }
+
+  .left-coffee p {
+    font-size: 0.75rem;
+  }
+}
+.left-coffee {
+  max-width: 55%;
+  position: relative;
+  z-index: 2;
+}
+.left-coffee h2,
+.left-coffee p {
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+}
+
+.text-accent {
+  color: #ffe0b2; /* soft warm cream/orange, readable on photo */
+}
+.menu-title {
+  color: black;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  text-align: center;
+  padding-top: 20px;
+}
+.menu-category {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #3b2b20;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 6px;
+  margin-top: 15px;
+  font-style: normal;
+}
+
+.menu-category i {
+  margin-right: 5px;
+  color: #b0704a;
+  font-style: normal;
+}
+
+.menu-category a {
+  font-size: 0.75rem;
+  color: #b0704a;
+  text-decoration: none;
+  font-weight: 400;
+}
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.menu-item img {
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.item-text {
+  flex: 1;
+}
+
+.item-name {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #3b2b20;
+}
+
+.item-desc {
+  font-size: 0.7rem;
+  color: #999;
+}
+
+.item-price {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #3b2b20;
+  white-space: nowrap;
+}
